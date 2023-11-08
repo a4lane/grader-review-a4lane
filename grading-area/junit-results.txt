@@ -1,0 +1,25 @@
+JUnit version 4.13.2
+..E.E
+Time: 0.701
+There were 2 failures:
+1) testFilter2(TestListExamples)
+java.lang.AssertionError: expected:<[MOON, moon]> but was:<[moon, MOON]>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:120)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at TestListExamples.testFilter2(TestListExamples.java:35)
+2) testMergeRightEnd1(TestListExamples)
+org.junit.runners.model.TestTimedOutException: test timed out after 500 milliseconds
+	at java.base@17.0.2/java.util.Arrays.copyOf(Arrays.java:3512)
+	at java.base@17.0.2/java.util.Arrays.copyOf(Arrays.java:3481)
+	at java.base@17.0.2/java.util.ArrayList.grow(ArrayList.java:237)
+	at java.base@17.0.2/java.util.ArrayList.grow(ArrayList.java:244)
+	at java.base@17.0.2/java.util.ArrayList.add(ArrayList.java:454)
+	at java.base@17.0.2/java.util.ArrayList.add(ArrayList.java:467)
+	at app//ListExamples.merge(ListExamples.java:42)
+	at app//TestListExamples.testMergeRightEnd1(TestListExamples.java:17)
+
+FAILURES!!!
+Tests run: 3,  Failures: 2
+
