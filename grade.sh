@@ -30,11 +30,21 @@ java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnit
 
 
 result=$( tail -n 2 junit-results.txt )
+echo " "
 
-if [ $result == OK*]
+if [[ $result == OK* ]]
 then
     echo "GRADE: 100%"
+elif [[ $result == *3*1 ]]
+then
+    echo "GRADE: 66%"
+elif [[ $result == *3*2 ]]
+then
+    echo "GRADE: 33%"
 else 
+    echo "GRADE: 0"
 fi
+
+
 
 echo $result
